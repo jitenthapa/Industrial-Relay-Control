@@ -1,0 +1,508 @@
+EESchema Schematic File Version 4
+LIBS:Logic-circuit-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RELAY-CONTROL-LOGIC-CIRCUIT"
+Date "2021-02-10"
+Rev "1"
+Comp "Orion Space"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx_IEEE:7432 U2
+U 2 1 602370B7
+P 2845 2945
+F 0 "U2" H 2845 3361 50  0000 C CNN
+F 1 "7432" H 2845 3270 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2845 2945 50  0001 C CNN
+F 3 "" H 2845 2945 50  0001 C CNN
+	2    2845 2945
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7432 U2
+U 1 1 60237116
+P 5365 2845
+F 0 "U2" H 5365 3261 50  0000 C CNN
+F 1 "7432" H 5365 3170 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5365 2845 50  0001 C CNN
+F 3 "" H 5365 2845 50  0001 C CNN
+	1    5365 2845
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7432 U2
+U 3 1 6023715B
+P 8105 3480
+F 0 "U2" H 8105 3896 50  0000 C CNN
+F 1 "7432" H 8105 3805 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 8105 3480 50  0001 C CNN
+F 3 "" H 8105 3480 50  0001 C CNN
+	3    8105 3480
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7408 U1
+U 1 1 60237273
+P 4050 2355
+F 0 "U1" H 4050 2771 50  0000 C CNN
+F 1 "7408" H 4050 2680 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4050 2355 50  0001 C CNN
+F 3 "" H 4050 2355 50  0001 C CNN
+	1    4050 2355
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7408 U1
+U 3 1 602372D6
+P 4060 3420
+F 0 "U1" H 4060 3836 50  0000 C CNN
+F 1 "7408" H 4060 3745 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4060 3420 50  0001 C CNN
+F 3 "" H 4060 3420 50  0001 C CNN
+	3    4060 3420
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 6023752D
+P 4145 4790
+F 0 "Q1" H 4336 4836 50  0000 L CNN
+F 1 "BC547" H 4336 4745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4345 4715 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4145 4790 50  0001 L CNN
+	1    4145 4790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6023767C
+P 1150 2355
+F 0 "J1" H 1070 2030 50  0000 C CNN
+F 1 "GENERATOR-1" H 1070 2121 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1150 2355 50  0001 C CNN
+F 3 "~" H 1150 2355 50  0001 C CNN
+	1    1150 2355
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6023771C
+P 1140 2925
+F 0 "J2" H 1060 2600 50  0000 C CNN
+F 1 "GENERATOR-2" H 1060 2691 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1140 2925 50  0001 C CNN
+F 3 "~" H 1140 2925 50  0001 C CNN
+	1    1140 2925
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 6023777F
+P 1150 3460
+F 0 "J3" H 1070 3135 50  0000 C CNN
+F 1 "NEA" H 1070 3226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1150 3460 50  0001 C CNN
+F 3 "~" H 1150 3460 50  0001 C CNN
+	1    1150 3460
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 602377E5
+P 1160 4070
+F 0 "J4" H 1080 3745 50  0000 C CNN
+F 1 "BUSBAR" H 1080 3836 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1160 4070 50  0001 C CNN
+F 3 "~" H 1160 4070 50  0001 C CNN
+	1    1160 4070
+	-1   0    0    1   
+$EndComp
+Text GLabel 1350 2355 2    50   Input ~ 0
+GND
+Text GLabel 1340 2925 2    50   Input ~ 0
+GND
+Text GLabel 1350 3460 2    50   Input ~ 0
+GND
+Text GLabel 1360 4070 2    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R1
+U 1 1 60237C98
+P 1710 2370
+F 0 "R1" H 1769 2416 50  0000 L CNN
+F 1 "10K" H 1769 2325 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1710 2370 50  0001 C CNN
+F 3 "~" H 1710 2370 50  0001 C CNN
+	1    1710 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 60237DC0
+P 1730 2950
+F 0 "R2" H 1789 2996 50  0000 L CNN
+F 1 "10K" H 1789 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1730 2950 50  0001 C CNN
+F 3 "~" H 1730 2950 50  0001 C CNN
+	1    1730 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 60237E50
+P 1785 3490
+F 0 "R3" H 1844 3536 50  0000 L CNN
+F 1 "10K" H 1844 3445 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1785 3490 50  0001 C CNN
+F 3 "~" H 1785 3490 50  0001 C CNN
+	1    1785 3490
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 60237ECE
+P 1775 4100
+F 0 "R4" H 1834 4146 50  0000 L CNN
+F 1 "10K" H 1834 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1775 4100 50  0001 C CNN
+F 3 "~" H 1775 4100 50  0001 C CNN
+	1    1775 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2255 1710 2255
+Wire Wire Line
+	1710 2255 1710 2270
+Wire Wire Line
+	1340 2825 1730 2825
+Wire Wire Line
+	1730 2825 1730 2850
+Wire Wire Line
+	1350 3360 1785 3360
+Wire Wire Line
+	1785 3360 1785 3390
+Wire Wire Line
+	1360 3970 1775 3970
+Wire Wire Line
+	1775 3970 1775 4000
+Text GLabel 1710 2470 3    50   Input ~ 0
+GND
+Text GLabel 1730 3050 3    50   Input ~ 0
+GND
+Text GLabel 1785 3590 3    50   Input ~ 0
+GND
+Text GLabel 1775 4200 3    50   Input ~ 0
+GND
+Connection ~ 1710 2255
+Wire Wire Line
+	1710 2255 3500 2255
+Wire Wire Line
+	1785 3360 2010 3360
+Wire Wire Line
+	2295 3360 2295 3045
+Connection ~ 1785 3360
+Wire Wire Line
+	1730 2825 2100 2825
+Wire Wire Line
+	2295 2825 2295 2845
+Connection ~ 1730 2825
+Wire Wire Line
+	3395 2945 3395 2455
+Wire Wire Line
+	3395 2455 3500 2455
+Wire Wire Line
+	2010 3360 2010 3520
+Wire Wire Line
+	2010 3520 3510 3520
+Connection ~ 2010 3360
+Wire Wire Line
+	2010 3360 2295 3360
+Wire Wire Line
+	3510 3320 2100 3320
+Wire Wire Line
+	2100 3320 2100 2825
+Connection ~ 2100 2825
+Wire Wire Line
+	2100 2825 2295 2825
+Wire Wire Line
+	4600 2355 4600 2745
+Wire Wire Line
+	4600 2745 4815 2745
+Wire Wire Line
+	4610 3420 4610 2945
+Wire Wire Line
+	4610 2945 4815 2945
+Wire Wire Line
+	5915 2845 6210 2845
+$Comp
+L 74xx_IEEE:7408 U1
+U 2 1 6023B0EB
+P 6760 2945
+F 0 "U1" H 6760 3361 50  0000 C CNN
+F 1 "7408" H 6760 3270 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6760 2945 50  0001 C CNN
+F 3 "" H 6760 2945 50  0001 C CNN
+	2    6760 2945
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 3970 3165 3970
+Wire Wire Line
+	6210 3970 6210 3045
+Connection ~ 1775 3970
+Wire Wire Line
+	7310 2945 7310 3380
+Wire Wire Line
+	7310 3380 7555 3380
+Text GLabel 4245 4990 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R6
+U 1 1 6023BDF4
+P 3615 4790
+F 0 "R6" V 3419 4790 50  0000 C CNN
+F 1 "1K" V 3510 4790 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3615 4790 50  0001 C CNN
+F 3 "~" H 3615 4790 50  0001 C CNN
+	1    3615 4790
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3945 4790 3715 4790
+Connection ~ 3165 3970
+Wire Wire Line
+	3165 3970 6210 3970
+Wire Wire Line
+	3515 4790 3165 4790
+Wire Wire Line
+	3165 3970 3165 4790
+Text GLabel 4245 4230 1    50   Input ~ 0
+Vcc
+$Comp
+L Device:R_Small R5
+U 1 1 6023DBA6
+P 4245 4395
+F 0 "R5" H 4304 4441 50  0000 L CNN
+F 1 "50" H 4304 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4245 4395 50  0001 C CNN
+F 3 "~" H 4245 4395 50  0001 C CNN
+	1    4245 4395
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4245 4590 4245 4555
+Wire Wire Line
+	4245 4295 4245 4230
+Wire Wire Line
+	4245 4555 7555 4555
+Wire Wire Line
+	7555 4555 7555 3580
+Connection ~ 4245 4555
+Wire Wire Line
+	4245 4555 4245 4495
+Text GLabel 8655 3480 2    50   Input ~ 0
+LOGIC-OUTPUT
+$Comp
+L buck_3a:Buck_3A U3
+U 1 1 602401CB
+P 2665 1225
+F 0 "U3" V 2150 1125 50  0000 C CNN
+F 1 "Buck_3A" V 2241 1125 50  0000 C CNN
+F 2 "Buck_3A:Buck_3A-2" H 2665 1225 50  0001 C CNN
+F 3 "" H 2665 1225 50  0001 C CNN
+	1    2665 1225
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 60240318
+P 1280 1220
+F 0 "J5" H 1200 895 50  0000 C CNN
+F 1 "BATTERY" H 1200 986 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1280 1220 50  0001 C CNN
+F 3 "~" H 1280 1220 50  0001 C CNN
+	1    1280 1220
+	-1   0    0    1   
+$EndComp
+Text GLabel 1480 1120 2    50   Input ~ 0
+12V
+Text GLabel 1480 1220 2    50   Input ~ 0
+GND
+Text GLabel 2215 975  0    50   Input ~ 0
+12V
+Text GLabel 2215 1475 0    50   Input ~ 0
+GND
+Text GLabel 2915 975  2    50   Input ~ 0
+Vcc
+Text GLabel 2915 1475 2    50   Input ~ 0
+GND
+Text GLabel 1840 6430 0    50   Input ~ 0
+LOGIC-OUTPUT
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 602418F0
+P 3425 6935
+F 0 "Q2" H 3616 6981 50  0000 L CNN
+F 1 "BC547" H 3616 6890 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3625 6860 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3425 6935 50  0001 L CNN
+	1    3425 6935
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 60241940
+P 3125 6935
+F 0 "R7" V 2929 6935 50  0000 C CNN
+F 1 "1K" V 3020 6935 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3125 6935 50  0001 C CNN
+F 3 "~" H 3125 6935 50  0001 C CNN
+	1    3125 6935
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1840 6430 2025 6430
+$Comp
+L Isolator:PC817 U4
+U 1 1 602427C0
+P 2380 6835
+F 0 "U4" H 2380 7160 50  0000 C CNN
+F 1 "PC817" H 2380 7069 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 2180 6635 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2380 6835 50  0001 L CNN
+	1    2380 6835
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 6430 2025 6735
+Wire Wire Line
+	2025 6735 2080 6735
+Text GLabel 2080 6935 3    50   Input ~ 0
+GND
+Text GLabel 3060 5585 1    50   Input ~ 0
+Vcc
+Wire Wire Line
+	2680 6935 3025 6935
+$Comp
+L Device:D D1
+U 1 1 6024519F
+P 3060 6230
+F 0 "D1" V 3014 6309 50  0000 L CNN
+F 1 "D" V 3105 6309 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 3060 6230 50  0001 C CNN
+F 3 "~" H 3060 6230 50  0001 C CNN
+	1    3060 6230
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3525 6735 3525 6610
+Wire Wire Line
+	3060 6380 3060 6610
+Wire Wire Line
+	3060 6610 3525 6610
+Connection ~ 3525 6610
+Wire Wire Line
+	3060 6080 3060 5675
+Wire Wire Line
+	3060 5675 3525 5675
+Wire Wire Line
+	2680 5675 3060 5675
+Wire Wire Line
+	2680 5675 2680 6735
+Connection ~ 3060 5675
+Wire Wire Line
+	3060 5675 3060 5585
+Text GLabel 3525 7135 3    50   Input ~ 0
+GND
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 6024C815
+P 4520 6635
+F 0 "J6" H 4600 6627 50  0000 L CNN
+F 1 "BUZZER" H 4600 6536 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4520 6635 50  0001 C CNN
+F 3 "~" H 4520 6635 50  0001 C CNN
+	1    4520 6635
+	1    0    0    -1  
+$EndComp
+Text GLabel 4315 5900 1    50   Input ~ 0
+12V
+Text GLabel 4320 6735 3    50   Input ~ 0
+GND
+$Comp
+L SRD-05VDC-SL-C-7:SRD-05VDC-SL-C K1
+U 1 1 60255989
+P 3865 6210
+F 0 "K1" H 3865 6577 50  0000 C CNN
+F 1 "SRD-05VDC-SL-C" H 3865 6486 50  0000 C CNN
+F 2 "SRD-05VDC-SL-C-7:RELAY_SRD-05VDC-SL-C-2" H 3865 6210 50  0001 L BNN
+F 3 "IPC-7251" H 3865 6210 50  0001 L BNN
+F 4 "SONGLE RELAY" H 3865 6210 50  0001 L BNN "Field4"
+	1    3865 6210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3525 6110 3565 6110
+Wire Wire Line
+	3525 5675 3525 6110
+Wire Wire Line
+	3525 6410 3565 6410
+Wire Wire Line
+	3525 6410 3525 6610
+Wire Wire Line
+	4165 6110 4315 6110
+Wire Wire Line
+	4315 5900 4315 6110
+Wire Wire Line
+	4165 6210 4315 6210
+Wire Wire Line
+	4315 6210 4315 6635
+Wire Wire Line
+	4320 6635 4315 6635
+Wire Notes Line
+	1100 600  3300 600 
+Wire Notes Line
+	3300 600  3300 1700
+Wire Notes Line
+	3300 1700 1100 1700
+Wire Notes Line
+	1100 1700 1100 600 
+Wire Notes Line
+	900  1900 9500 1900
+Wire Notes Line
+	9500 5200 900  5200
+Wire Notes Line
+	900  5300 5100 5300
+Wire Notes Line
+	5100 5300 5100 7500
+Wire Notes Line
+	5100 7500 900  7500
+Wire Notes Line
+	900  7500 900  5300
+Wire Notes Line
+	900  1900 900  5200
+Wire Notes Line
+	9500 1900 9500 5200
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 602CCBBE
+P 1294 1628
+F 0 "J7" H 1214 1303 50  0000 C CNN
+F 1 "CHARGER-CONNECTOR" H 1214 1394 50  0000 C CNN
+F 2 "Buck_3A:TerminalBlock_bornier-2_P5.08mm" H 1294 1628 50  0001 C CNN
+F 3 "~" H 1294 1628 50  0001 C CNN
+	1    1294 1628
+	-1   0    0    1   
+$EndComp
+Text GLabel 1494 1528 2    50   Input ~ 0
+12V
+Text GLabel 1494 1628 2    50   Input ~ 0
+GND
+$EndSCHEMATC
